@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-28 22:26:33 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.BuildingIntro" table="building_intro" schema="dbo" catalog="realty">
+        <id name="buildintroId" type="int">
+            <column name="buildintro_id" />
+            <generator class="native" />
+        </id>
+        <property name="buildingId" type="int">
+            <column name="building_id" not-null="true" />
+        </property>
+        <property name="buildingName" type="string">
+            <column name="building_name" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" />
+        </property>
+        <property name="buildingEast" type="string">
+            <column name="building_east" />
+        </property>
+        <property name="buildingWest" type="string">
+            <column name="building_west" />
+        </property>
+        <property name="buildingSouth" type="string">
+            <column name="building_south" />
+        </property>
+        <property name="buildingNorth" type="string">
+            <column name="building_north" />
+        </property>
+        <property name="landLevel" type="string">
+            <column name="land_level" />
+        </property>
+        <property name="neighborhood" type="string">
+            <column name="neighborhood" />
+        </property>
+        <property name="buildingInfor" type="string">
+            <column name="building_infor" />
+        </property>
+        <property name="nearRoad" type="string">
+            <column name="near_road" />
+        </property>
+        <property name="publicTransport" type="string">
+            <column name="public_transport" />
+        </property>
+        <property name="commercialFacility" type="string">
+            <column name="commercial_facility" />
+        </property>
+        <property name="financingNstitution" type="string">
+            <column name="financing_nstitution" />
+        </property>
+        <property name="school" type="string">
+            <column name="school" />
+        </property>
+        <property name="hospital" type="string">
+            <column name="hospital" />
+        </property>
+        <property name="other" type="string">
+            <column name="other" />
+        </property>
+        <property name="internalFacility" type="string">
+            <column name="internal_facility" />
+        </property>
+        <property name="electricityFacility" type="string">
+            <column name="electricity_facility" />
+        </property>
+        <property name="parkFacility" type="string">
+            <column name="park_facility" />
+        </property>
+        <property name="propertyManagement" type="string">
+            <column name="property_management" />
+        </property>
+        <property name="environment" type="string">
+            <column name="environment" />
+        </property>
+        <property name="collectTime" type="date">
+            <column name="collect_time" length="10" />
+        </property>
+        <property name="entryName" type="string">
+            <column name="entry_name" />
+        </property>
+        <property name="entryTime" update="false" type="timestamp">
+            <column name="entry_time" length="16" />
+        </property>
+        <property name="auditName" type="string">
+            <column name="audit_name" />
+        </property>
+        <property name="auditTime" type="timestamp">
+            <column name="audit_time" length="16" />
+        </property>
+         <property name="status" type="java.lang.Integer">
+            <column name="status" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" />
+        </property>
+        <property name="buildNum" type="java.lang.Integer">
+            <column name="build_num" />
+        </property>
+        <property name="floors" type="string">
+            <column name="floors" />
+        </property>
+        <property name="cells" type="java.lang.Integer">
+            <column name="cells" />
+        </property>
+        <property name="networks" type="string">
+            <column name="networks" />
+        </property>
+        <property name="onehouses" type="java.lang.Integer">
+            <column name="onehouses" />
+        </property>
+    </class>
+</hibernate-mapping>

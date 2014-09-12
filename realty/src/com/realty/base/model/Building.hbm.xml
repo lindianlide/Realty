@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-6-12 13:12:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Building" table="building" schema="dbo" catalog="realty">
+        <id name="buildingId" type="int">
+            <column name="building_id" />
+            <generator class="native" />
+        </id>
+        <property name="buildingName" type="string">
+            <column name="building_name" not-null="true" />
+        </property>
+        <property name="buildingAlias" type="string">
+            <column name="building_alias" />
+        </property>
+        <property name="regionId" type="java.lang.Integer">
+            <column name="region_id" />
+        </property>
+        <property name="propertyAdress" type="string">
+            <column name="property_adress" />
+        </property>
+        <property name="propertyName" type="string">
+            <column name="property_name" />
+        </property>
+        <property name="usageId" type="java.lang.Integer">
+            <column name="usage_id" />
+        </property>
+        <property name="buildtimeId" type="java.lang.Integer">
+            <column name="buildtime_id" />
+        </property>
+        <property name="developers" type="string">
+            <column name="developers" />
+        </property>
+        <property name="floorArea" type="java.lang.Double">
+            <column name="floor_area" precision="53" scale="0" />
+        </property>
+        <property name="buildingArea" type="java.lang.Double">
+            <column name="building_area" precision="53" scale="0" />
+        </property>
+        <property name="structureId" type="java.lang.Integer">
+            <column name="structure_id" />
+        </property>
+        <property name="formId" type="string">
+            <column name="form_id" />
+        </property>
+        <property name="plotRatio" type="string">
+            <column name="plot_ratio" />
+        </property>
+        <property name="landuseTime" type="date">
+            <column name="landuse_time" length="10" />
+        </property>
+        <property name="buildingDensity" type="string">
+            <column name="building_density" />
+        </property>
+        <property name="greeningRate" type="string">
+            <column name="greening_rate" />
+        </property>
+        <property name="parkingRatio" type="big_decimal">
+            <column name="parking_ratio" precision="3" />
+        </property>
+        <property name="decorateId" type="java.lang.Integer">
+            <column name="decorate_id" />
+        </property>
+        <property name="openTime" type="date">
+            <column name="open_time" length="10" />
+        </property>
+        <property name="propertyService" type="string">
+            <column name="property_service" />
+        </property>
+        <property name="initialPrice" type="java.lang.Double">
+            <column name="initial_price" precision="53" scale="0" />
+        </property>
+        <property name="averagePrice" type="java.lang.Double">
+            <column name="average_price" precision="53" scale="0" />
+        </property>
+        <property name="perPrice" type="java.lang.Double">
+            <column name="per_price" precision="53" scale="0" />
+        </property>
+        <property name="totalPrice" type="java.lang.Double">
+            <column name="total_price" precision="53" scale="0" />
+        </property>
+        <property name="locationphoto" type="string">
+            <column name="locationphoto" />
+        </property>
+        <property name="landId" type="java.lang.Integer">
+            <column name="land_id" />
+        </property>
+        <property name="buildintroId" type="java.lang.Integer">
+            <column name="buildintro_id" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="longitude" precision="53" scale="0" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="latitude" precision="53" scale="0" />
+        </property>
+        <property name="entryId" update="false" type="java.lang.Integer">
+            <column name="entry_id" />
+        </property>
+        <property name="entryName" update="false" type="string">
+            <column name="entry_name" />
+        </property>
+        <property name="entryTime" update="false" type="timestamp">
+            <column name="entry_time" length="16" />
+        </property>
+        <property name="auditName" type="string">
+            <column name="audit_name" />
+        </property>
+        <property name="auditTime" type="timestamp">
+            <column name="audit_time" length="16" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="status" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" />
+        </property>
+        <property name="buildtimeOne" type="string">
+            <column name="buildtime_one" />
+        </property>
+        <property name="buildtimeTwo" type="string">
+            <column name="buildtime_two" />
+        </property>
+        <property name="buildtimeThree" type="string">
+            <column name="buildtime_three" />
+        </property>
+        <property name="buildtimeOther" type="string">
+            <column name="buildtime_other" />
+        </property>
+        <property name="buildingtimeFinish" type="string">
+            <column name="buildingtime_finish" />
+        </property>
+        <property name="buildRegion" type="string">
+            <column name="build_region" />
+        </property>
+        <property name="projectFeature" type="string">
+            <column name="project_feature" />
+        </property>
+        <property name="zipCode" type="java.lang.Integer">
+            <column name="zip_code" />
+        </property>
+        <property name="buildingStruc" type="string">
+            <column name="building_struc" />
+        </property>
+        <property name="buildingType" type="string">
+            <column name="building_type" />
+        </property>
+        <property name="propertyFee" type="java.lang.Double">
+            <column name="property_fee" precision="53" scale="0" />
+        </property>
+        <property name="proWorkaddress" type="string">
+            <column name="pro_workaddress" />
+        </property>
+        <property name="proPhone" type="string">
+            <column name="pro_phone" />
+        </property>
+        <property name="proOtherinfor" type="string">
+            <column name="pro_otherinfor" />
+        </property>
+        <property name="waterSupply" type="string">
+            <column name="water_supply" />
+        </property>
+        <property name="electricitySupply" type="string">
+            <column name="electricity_supply" />
+        </property>
+        <property name="heatSupply" type="string">
+            <column name="heat_supply" />
+        </property>
+        <property name="gas" type="string">
+            <column name="gas" />
+        </property>
+        <property name="communications" type="string">
+            <column name="communications" />
+        </property>
+        <property name="elevato" type="string">
+            <column name="elevato" />
+        </property>
+        <property name="security" type="string">
+            <column name="security" />
+        </property>
+        <property name="hygienism" type="string">
+            <column name="hygienism" />
+        </property>
+        <property name="parking" type="string">
+            <column name="parking" />
+        </property>
+        <property name="communityEnter" type="string">
+            <column name="community_enter" />
+        </property>
+        <property name="propertyRight" type="string">
+            <column name="property_right" />
+        </property>
+        <property name="floors" type="java.lang.Integer">
+            <column name="floors" />
+        </property>
+        <property name="units" type="java.lang.Integer">
+            <column name="units" />
+        </property>
+        <property name="currentHouses" type="java.lang.Integer">
+            <column name="current_houses" />
+        </property>
+        <property name="allHouses" type="java.lang.Integer">
+            <column name="all_houses" />
+        </property>
+        <property name="buildingintro" type="string">
+            <column name="buildingintro" />
+        </property>
+        <property name="editer" type="string">
+            <column name="editer" />
+        </property>
+    </class>
+</hibernate-mapping>

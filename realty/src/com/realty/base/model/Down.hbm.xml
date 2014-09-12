@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-19 15:17:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Down" table="down" schema="dbo" catalog="realty">
+        <id name="downId" type="int">
+            <column name="down_id" />
+            <generator class="native" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" />
+        </property>
+        <property name="downcategoryId"  update="false" type="java.lang.Integer">
+            <column name="downcategory_id" />
+        </property>
+        <property name="date" update="false" type="timestamp">
+            <column name="date" length="16" />
+        </property>
+        <property name="downs" type="java.lang.Integer">
+            <column name="downs" />
+        </property>
+        <property name="contents" type="string">
+            <column name="contents" />
+        </property>
+        <property name="downFile" type="string">
+            <column name="down_file" />
+        </property>
+    </class>
+</hibernate-mapping>

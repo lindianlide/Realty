@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-10 15:07:28 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Member" table="memeber" schema="dbo" catalog="realty">
+        <id name="memberId" type="int">
+            <column name="member_id" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" not-null="true" />
+        </property>
+        <property name="EMail" type="string">
+            <column name="e_mail" />
+        </property>
+        <property name="querstion" type="string">
+            <column name="querstion" />
+        </property>
+        <property name="answer" type="string">
+            <column name="answer" />
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="createTime" length="23" />
+        </property>
+        <property name="memrole" type="java.lang.Integer">
+            <column name="memrole" />
+        </property>
+        <property name="registerId" type="string">
+            <column name="registerid" />
+        </property>
+    </class>
+</hibernate-mapping>

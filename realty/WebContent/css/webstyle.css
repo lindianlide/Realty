@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 14px;color: #1d1007; line-height:24px}
+table{border-right:1px solid #000000;border-bottom:1px solid #000000;}
+td{border-top:1px solid #000000;border-left:1px solid #000000;border-right:1px solid #000000;height:28px;/* width:280px; */padding-left:15px;}
+

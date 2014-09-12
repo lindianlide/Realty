@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+body {
+}
+/*图片*/
+.posBox, .monthList li s, .houseInedex_info p span s, .contactInfo a, b.viewReport, s.tr_icon{background-image:url(../images/indexBg.png)}
+.homepageSearch, .input_search_wrapper, .submBtn, .sigleBox, .sigleBox dl dt, .homepageBox .more_link, .sigleBox dl dd cite a, .sigleBox dl dd b a{background-image:url();}
+/*大背景 搜索区*/
+
+.marqueeSized{height: 630px; max-height:710px; min-height: 1px; overflow: hidden; } 
+
+.marquee_image_transition,.zss_marquee_image{background-color: transparent; background-position: 0 100px;/*  background-repeat: no-repeat no-repeat; */ background-size: 1500px 836px; box-shadow: 0 0 80px 60px #989898 inset; height:710px; left: 50%; margin-left: -750px; margin-top: -355px; position: absolute;top: 50%; width: 1500px; z-index: 0;}
+
+.homepageBox{border-bottom: 13px solid #1660c3; position: absolute; top: 0; width: 100%; z-index: 0;}
+.searchWrapper{left: 50%; margin-left: -299px; margin-top: -60px; max-width: 100%; position: absolute; top: 44%; width:598px; z-index:100;}
+.homepageSearch{background-position:0 0; position: relative; width: 100%; height:161px; z-index: 2;}
+.searchHeader{text-indent:-9999px; width:598px; height:40px;}
+.searchbar{position:relative; margin:23px auto 0; width:513px;}
+.input_search_wrapper{float:left; background-position:0 -168px; width:450px; height:40px; padding-left:10px}
+.input_search_wrapper label input{background-color:#fff; border:none; height:20px; line-height:20px; padding:10px 0; font-size:15px; width:450px; color:#999;}
+.ie7 .input_search_wrapper label input{padding:9px 0;}
+.searchbar .submBtn{position:absolute; top:0; right:0; background-color:#000000	; background-position:-526px -168px; width:53px; height:40px; text-indent:-9999px; border:none;}
+.seachInfo{text-align:center; color:#FFFFFF; line-height:22px; margin:15px 0;}
+.seachInfo em{margin:0 2px; color:#fff799;}
+.smallInfoBox{left:32%; margin-left:-270px; margin-top:-35px; position: absolute; top:84%; width:auto; height:70px;}
+.sigleBox{float:left; display:inline; background-position:0 -217px; width:270px; height:70px;}
+.sigleBox dl{margin:10px; overflow:hidden;}
+.sigleBox dl dt{float:left; display:inline; background-position:-423px -216px; width:52px; height:52px;}
+.sigleBox dl dt.d_01{background-position:-369px -216px;}
+.sigleBox dl dt.d_02{background-position:-424px -216px;}
+.sigleBox dl dt.d_03{background-position:-424px -273px;}
+.sigleBox dl dd{float:left; display:inline; margin-left:15px; color:#ccc; width:155px;}
+.sigleBox dl dd b{display:block; padding-bottom:5px; color:#fff; line-height:22px; position:relative;}
+.sigleBox dl dd b a{position:absolute; left:63px; top:3px; width:40px; height:16px; text-indent:-9999px;}
+.sigleBox dl dd b a.down{background-position:-485px -252px; }
+.sigleBox dl dd b a.check{background-position:-485px -272px; left:85px;}
+.sigleBox dl dd cite{line-height:15px;}
+.sigleBox dl dd cite a{background-position:-544px -215px; display:block; width:47px; height:23px; text-indent:-9999px;}
+.homepageBox .more_link{background-position:-478px -216px; bottom:0; display:block; height: 30px; left: 50%; margin-left: -30px; position: absolute; width:61px; z-index:1; text-indent:-9999px;}
+.scanning_box{position:fixed; right:55px; top:180px; border:1px solid #a0a0a0; border-radius:2px; padding:5px 0; width:105px; height:135px; background-color:#fff;}
+.scanning_box h5{background:url(../images/indexSearchBg.png) no-repeat 0 -303px; width:99px; height:20px; line-height:20px; text-align:center; color:#fff; margin:0 auto;}
+.scanning_box span{display:block; width:88px; height:88px; margin:5px auto;}
+.scanning_box span img{width:88px; height:88px;}
+.scanning_box cite{color:#ff5757; display:block; margin-left:11px;}
+.scanning_box a{display:block;}
+.scanning_box a:hover{text-decoration:none;}
+.scanning_box a img{display:block; margin:0 0 5px 4px; width:98px; height:103px;}
+.scanning_box a em{line-height:16px; margin:0 6px 0 12px; display:block;}
+
+/*底部*/
+#Footer dl{margin-bottom:15px; line-height:20px; overflow:hidden;}
+#Footer dl dt{float:left; display:inline; color:#333; font-weight:700; margin-right:20px;}
+#Footer dl dd{display:inline; float:left; width:918px; overflow:hidden;}
+#Footer dl dd a{white-space:nowrap; margin-right:20px; color:#666; float:left; margin-bottom:8px;}
+.footList{border-top:1px solid #ddd; padding-top:20px;}
+.footList ul{width:333px; margin:0 auto; overflow:hidden;}
+.footList ul li{float:left; display:inline; margin-right:8px; line-height:16px; color:#666;}
+.footList ul li a{color:#666; margin-right:8px;}
+.footList p{line-height:35px; color:#666; text-align:center;}
+/*图片切换*/
+#picWrap{ position:relative; z-index:-1}
+#picWrap .pic_panel{ position:absolute;}
+

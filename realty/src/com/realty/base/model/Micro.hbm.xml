@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-29 12:10:33 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Micro" table="micro" schema="dbo" catalog="realty">
+        <id name="microId" type="int">
+            <column name="micro_id" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="number" type="java.lang.Integer">
+            <column name="number" />
+        </property>
+        <property name="data" update="false" type="timestamp">
+            <column name="data" length="16" />
+        </property>
+        <property name="keyword" type="string">
+            <column name="keyword" />
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" />
+        </property>
+        <property name="contents" type="string">
+            <column name="contents" />
+        </property>
+        <property name="microcategoryId" update="false" type="java.lang.Integer">
+            <column name="microcategory_id" />
+        </property>
+        <property name="microcategoryFile" type="string">
+            <column name="microcategory_file" />
+        </property>
+    </class>
+</hibernate-mapping>

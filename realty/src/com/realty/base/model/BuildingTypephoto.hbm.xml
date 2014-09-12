@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-28 13:33:41 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.BuildingTypephoto" table="building_typephoto" schema="dbo" catalog="realty">
+        <id name="typephotoId" type="int">
+            <column name="typephoto_id" />
+            <generator class="native" />
+        </id>
+        <property name="buildingId" type="java.lang.Integer">
+            <column name="building_id" />
+        </property>
+        <property name="typePhoto" type="string">
+            <column name="photopath" />
+        </property>
+    </class>
+</hibernate-mapping>

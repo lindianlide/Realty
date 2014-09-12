@@ -1,0 +1,50 @@
+#album{
+	width: 380px;
+
+	font-size: 100%;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+#pic{
+	margin: 10px;
+	width: 370px;
+	height: 280px;
+	overflow: auto;
+	border: solid 5px #FFFFFF;
+	float: left;
+}
+#placeholder{
+	
+	width: 300px;
+	height: 270px;
+	
+}
+		
+#thumbs{
+	height: 78px;
+	clear: left;
+	width: 370px;
+	margin: 0 5px;
+	overflow: auto;
+	overflow-y: hidden;
+}
+	
+#thumbs ul{
+	width: 580px;
+	padding: 5px 0;
+}
+	
+#thumbs img{
+	width: 60px;
+	height: 50px;
+}
+	
+#thumbs ul li{
+	float: left;
+	padding: 0 3px 0 2px;
+}
+#thumbs ul li a{
+	background: transparent;
+}
+

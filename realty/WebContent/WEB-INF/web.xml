@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>realty</display-name>
+<context-param>
+    <param-name>fileupload</param-name>
+    <param-value>E:/Program Files/java/workspaceeclipseS/realty/WebContent/fileupload/</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>ckeditorpic</param-name>
+    <param-value>E:/Program Files/java/workspaceeclipseS/realty/WebContent/ckeditorpic/</param-value>
+  </context-param> 
+  
+  <context-param>
+    <param-name>buildingupload</param-name>
+    <param-value>E:/Program Files/java/workspaceeclipseS/realty/WebContent/picupload/building/</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>secondupload</param-name>
+    <param-value>E:/Program Files/java/workspaceeclipseS/realty/WebContent/picupload/second/</param-value>
+  </context-param>
+  
+    <context-param>
+    <param-name>landupload</param-name>
+    <param-value>E:/Program Files/java/workspaceeclipseS/realty/WebContent/picupload/land/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>landfileupload</param-name>
+    <param-value>E:/Program Files/java/workspaceeclipseS/realty/WebContent/fileupload/land/</param-value>
+  </context-param>
+ <!-- <context-param>
+    <param-name>fileupload</param-name>
+   <param-value>D:/Program Files/apache-tomcat-7.0.54/webapps/realty/fileupload/</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>ckeditorpic</param-name>
+    <param-value>D:/Program Files/apache-tomcat-7.0.54/webapps/realty/ckeditorpic/</param-value>
+  </context-param> 
+  
+  <context-param>
+    <param-name>buildingupload</param-name>
+    <param-value>D:/Program Files/apache-tomcat-7.0.54/webapps/realty/picupload/building/</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>secondupload</param-name>
+    <param-value>D:/Program Files/apache-tomcat-7.0.54/webapps/realty/picupload/second/</param-value>
+  </context-param>
+  
+    <context-param>
+    <param-name>landupload</param-name>
+      <param-value>D:/Program Files/apache-tomcat-7.0.54/webapps/realty/picupload/land/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>landfileupload</param-name>
+    <param-value>D:/Program Files/apache-tomcat-7.0.54/webapps/realty/fileupload/land/</param-value>
+  </context-param> -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

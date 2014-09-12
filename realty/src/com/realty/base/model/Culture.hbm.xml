@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-29 12:10:33 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Culture" table="culture" schema="dbo" catalog="realty">
+        <id name="cultureId" type="int">
+            <column name="culture_id" />
+            <generator class="native" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" not-null="true" />
+        </property>
+        <property name="data" update="false" type="timestamp">
+            <column name="data" length="16" />
+        </property>
+        <property name="culcategoryId" update="false" type="java.lang.Integer">
+            <column name="culcategory_id" />
+        </property>
+        <property name="contents" type="string">
+            <column name="contents" />
+        </property>
+        <property name="culFile" type="string">
+            <column name="cul_file" />
+        </property>
+        <set name="culturePhotos" table="culture_photo" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="culture_id" />
+            </key>
+            <one-to-many class="com.realty.base.model.CulturePhoto" />
+        </set>
+    </class>
+</hibernate-mapping>

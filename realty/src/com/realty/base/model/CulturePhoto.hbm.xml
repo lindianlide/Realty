@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-29 12:10:33 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.CulturePhoto" table="culture_photo" schema="dbo" catalog="realty">
+        <id name="culphotoId" type="int">
+            <column name="culphoto_id" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="culture" class="com.realty.base.model.Culture" fetch="select">
+            <column name="culture_id" />
+        </many-to-one>
+        <property name="culphoto" type="string">
+            <column name="culphoto" />
+        </property>
+        <property name="culdiscribe" type="string">
+            <column name="culdiscribe" />
+        </property>
+    </class>
+</hibernate-mapping>

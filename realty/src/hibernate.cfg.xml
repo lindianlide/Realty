@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.password">ldl123789</property>
+       <!--  <property name="hibernate.connection.url">jdbc:sqlserver://222.195.151.7:1433;DatabaseName=realty</property> -->
+         <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;DatabaseName=realty</property> 
+        <property name="hibernate.connection.username">lindianli</property>
+        <property name="hibernate.dialect">com.realty.base.utils.SqlServer2008Dialect</property>
+	    <property name="c3p0.min_size">5</property>
+	    <property name="c3p0.max_size">20</property> 
+	    <property name="c3p0.timeout">2000</property>
+	    <property name="c3p0.max_statements">50</property>
+	    <property name="c3p0.acquire_increment">2</property>
+	    <property name="hibernate.connection.autocommit">false</property>  
+	    <property name="hibernate.show_sql">true</property> 
+	    <mapping resource="com/realty/base/model/Manager.hbm.xml"/> 
+	    <mapping resource="com/realty/base/model/Member.hbm.xml"/> 
+	    <mapping resource="com/realty/base/model/Building.hbm.xml"/> 
+	    <mapping resource="com/realty/base/model/BuildingIntro.hbm.xml"/>
+	    <mapping resource="com/realty/base/model/BuildingDecorate.hbm.xml"/> 
+	    <mapping resource="com/realty/base/model/BuildingForm.hbm.xml"/> 
+	    <mapping resource="com/realty/base/model/BuildingStructure.hbm.xml"/> 
+	    <mapping resource="com/realty/base/model/BuildingUsage.hbm.xml"/> 
+	    <mapping resource="com/realty/base/model/Region.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/BuildingPhoto.hbm.xml"/>
+		<mapping resource="com/realty/base/model/BuildingPlanphoto.hbm.xml"/>
+		<mapping resource="com/realty/base/model/BuildingTypephoto.hbm.xml"/>
+		<mapping resource="com/realty/base/model/BuildingLocationphoto.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/Project.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/News.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/Research.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/Down.hbm.xml"/>
+		<mapping resource="com/realty/base/model/Secondhouse.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/SedecoratePhoto.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/SetypePhoto.hbm.xml"/>  
+		<mapping resource="com/realty/base/model/FloorUsage.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/PriceType.hbm.xml"/>  
+		<mapping resource="com/realty/base/model/TaxType.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/Culture.hbm.xml"/>
+ 		<mapping resource="com/realty/base/model/CulturePhoto.hbm.xml"/> 
+ 		<mapping resource="com/realty/base/model/Law.hbm.xml"/> 
+ 		<mapping resource="com/realty/base/model/Land.hbm.xml"/> 
+ 		<mapping resource="com/realty/base/model/LandUsage.hbm.xml"/> 
+ 		<mapping resource="com/realty/base/model/LandPoss.hbm.xml"/> 
+ 		<mapping resource="com/realty/base/model/LandSellway.hbm.xml"/>
+ 		<mapping resource="com/realty/base/model/LandPhoto.hbm.xml"/> 
+ 		<mapping resource="com/realty/base/model/LandLocation.hbm.xml"/>
+ 		<mapping resource="com/realty/base/model/LandAllot.hbm.xml"/>
+ 		<mapping resource="com/realty/base/model/LandMutiusage.hbm.xml"/>
+ 		<mapping resource="com/realty/base/model/Floor.hbm.xml"/>    
+		<mapping resource="com/realty/base/model/Macro.hbm.xml"/> 
+		<mapping resource="com/realty/base/model/Micro.hbm.xml"/> 
+		  
+    </session-factory>
+</hibernate-configuration>

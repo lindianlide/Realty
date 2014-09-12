@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-24 15:56:48 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.LandMutiusage" table="land_mutiusage" schema="dbo" catalog="realty">
+        <id name="mutiusageId" type="int">
+            <column name="mutiusage_id" />
+            <generator class="native" />
+        </id>
+        <property name="landId" type="int">
+            <column name="land_id" not-null="true" />
+        </property>
+        <property name="landusageId" type="java.lang.Integer">
+            <column name="landusage_id" />
+        </property>
+        <property name="landusageDetail" type="string">
+            <column name="landusage_detail" />
+        </property>
+        <property name="landArea" type="java.lang.Double">
+            <column name="land_area" precision="53" scale="0" />
+        </property>
+        <property name="planArea" type="java.lang.Double">
+            <column name="plan_area" precision="53" scale="0" />
+        </property>
+        <property name="landLevel" type="string">
+            <column name="land_level" />
+        </property>
+        <property name="useyear" type="java.lang.Integer">
+            <column name="useyear" />
+        </property>
+        <property name="initialPrice" type="java.lang.Double">
+            <column name="initial_price" precision="53" scale="0" />
+        </property>
+        <property name="dealPrice" type="java.lang.Double">
+            <column name="deal_price" precision="53" scale="0" />
+        </property>
+        <property name="ramarks" type="string">
+            <column name="ramarks" />
+        </property>
+    </class>
+</hibernate-mapping>

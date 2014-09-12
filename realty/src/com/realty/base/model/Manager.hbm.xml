@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-27 17:27:36 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Manager" table="manager" schema="dbo" catalog="realty" dynamic-insert="true" dynamic-update="true" select-before-update="true">
+        <id name="manId" type="int">
+            <column name="man_id" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" not-null="true" />
+        </property>
+        <property name="manrole" type="string">
+            <column name="manrole" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

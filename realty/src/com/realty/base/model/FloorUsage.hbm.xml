@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-27 11:24:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.FloorUsage" table="floor_usage" schema="dbo" catalog="realty">
+        <id name="usageId" type="int">
+            <column name="usage_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="usageName" type="string">
+            <column name="usage_name" />
+        </property>
+    </class>
+</hibernate-mapping>

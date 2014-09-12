@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+/* 选项卡整体外观定义 */
+.tabList {
+width:900px;
+height:325px;
+overflow:hidden;
+}
+.tabList .tabBox {
+height:100%;
+width:94%;
+/* position:relative; */
+}
+.tabList .tabBox li {
+float:left;
+width:22%;
+text-align:center;
+}
+.tabList h4 {
+margin:0;
+height:26px;
+font-size:1em;
+line-height:22px;
+}
+.tabList h4 a {
+color:#039;
+font-weight:normal;
+display:block;
+background:#bfeafd url(img/tabList_btn.png) no-repeat;
+padding-left:5px;
+}
+.tabList h4 a span {
+display:block;
+background:url(img/tabList_btn.png) no-repeat top right;
+padding-right:5px;
+}
+.tabList h4 a:hover,
+.tabList .tabOn h4 a{
+background-position:0 -50px;
+} 
+.tabList h4 a:hover span,
+.tabList .tabOn h4 a span {
+background-position:right -50px;
+}
+.tabList .tabContentBox li{
+width:auto;
+margin-top:0;
+}
+.tabList .tabContentBox {
+width:900px;
+height:300px;
+border:1px solid #069;
+text-align:left;
+overflow:hidden;
+background:#fff;
+position:absolute;
+top:22px;
+left:0;
+display:none;
+margin:4px;
+}
+.tabList li:hover .tabContentBox,
+.tabList .tabOn .tabContentBox {
+display:block;
+}
+/* 以下是对各项内容的CSS定义 */
+.tabList .tabContentBox .blog,
+.tabList .tabContentBox .group {
+color:#999;
+line-height:2em;
+margin:5px;
+}
+.tabList .tabContentBox .blog dt,
+.tabList .tabContentBox .group dt,
+.tabList .tabContentBox .blog dd,
+.tabList .tabContentBox .group dd{
+float:left;
+border-bottom: 1px dotted #9cf;
+}
+.tabList .tabContentBox .blog dt,
+.tabList .tabContentBox .group dt {
+width:60%;
+white-space:nowrap;
+overflow:hidden;
+clear:left;
+font-size:1.1em;
+}
+.tabList .tabContentBox .blog dt a,
+.tabList .tabContentBox .group dt a {
+color:#039;
+display:block;
+margin-left:5px;
+padding-left:12px;
+background: url(img/tabList_icon1.png) no-repeat 5px 11px;
+}
+.tabList .tabContentBox .blog dt a:hover,
+.tabList .tabContentBox .group dt a:hover {
+color:#f90;
+background-position:5px -19px;
+}
+.tabList .tabContentBox .blog dd,
+.tabList .tabContentBox .group dd {
+color:#0cf;
+width:20%;
+float:left;
+white-space:nowrap;
+overflow:hidden;
+}
+.tabList .tabContentBox .blog dd a,
+.tabList .tabContentBox .group dd a {
+color:#069;
+}
+.tabList .tabContentBox .blog dd a:hover,
+.tabList .tabContentBox .group dd a:hover {
+color:#f90;
+}
+.tabList .tabContentBox .album li,
+.tabList .tabContentBox .share li{
+width:24.9%;
+float:left;
+padding-top:15px;
+text-align:center;
+}

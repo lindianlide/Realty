@@ -1,0 +1,172 @@
+#background {
+	position:absolute;
+	left:153px;
+	top:154px;
+	width:994px;
+	height:2000px;
+	background:#F7F7F7;
+	border:1px solid #F0F0F0;
+	z-index:1;
+}
+#basicinfo {
+	position:absolute;
+	left:13px;
+	top:125px;
+	width:925px;
+	height:406px;
+	background:#FFFFF0;
+	border:1px solid #F0F0F0;
+	z-index:2;
+}
+#rightinfo {
+	position:absolute;
+	left:683px;
+	top:125px;
+	width:287px;
+	height:407px;
+	border:1px solid #000;
+	z-index:3;
+}
+#imageinfo {
+	position:absolute;
+	left:5px;
+	top:5px;
+	width:400px;
+	min-height:400px;
+	
+	z-index:4;
+}
+#headinfo {
+	position:absolute;
+	left:14px;
+	top:20px;
+	width:960px;
+	height:82px;
+	border:1px solid #F0F0F0;
+	z-index:5;
+}
+#titleinfo1  {
+	position:absolute;
+	left:8px;
+	top:4px;
+	width:607px;
+	height:40px;
+	color:#FF3030;
+	font-size:25px;
+	border:1px solid #F0F0F0;
+	z-index:6;
+}
+#titleinfo2 {
+	position:absolute;
+	left:9px;
+	top:49px;
+	width:606px;
+	height:29px;
+	font-size:15px;
+	color:#000000;
+	border:1px solid #F0F0F0;
+	z-index:7;
+}
+#centerinfo1 {
+	position:absolute;
+	left:450px;
+	top:22px;
+	width:400px;
+	height:28px;
+	color:#525252;
+	border:1px solid #F0F0F0;
+	z-index:8;
+}
+#centerinfo2 {
+	position:absolute;
+	left:450px;
+	top:60px;
+	width:400px;
+	height:28px;
+	color:#525252;
+	border:1px solid #F0F0F0;
+	z-index:9;
+}
+#centerinfo3 {
+	position:absolute;
+	left:450px;
+	top:100px;
+	width:400px;
+	height:31px;
+	color:#525252;
+	border:1px solid #F0F0F0;
+	z-index:10;
+}
+#centerinfo4 {
+	position:absolute;
+	left:450px;
+	top:145px;
+	width:400px;
+	height:180px;
+	color:#525252;
+	border:1px solid #F0F0F0;
+	z-index:11;
+}
+#map{
+	position:absolute;
+	left:13px;
+ 	top:1050px; 
+	width:649px;
+	height:500px;
+	border:1px solid #000;
+	z-index:12;
+}
+#secondinfo{
+	position:absolute;
+	left:13px;
+	top:540px;
+	width:925px;
+	min-height:150px;
+	border:1px solid #000;
+	
+	z-index:13;
+}
+#typephoto{
+	position:absolute;
+	left:13px;
+	top:700px;
+	width:925px;
+	min-height:340px;
+	border:1px solid #000;
+}
+#typephotoin {
+	position:relative;
+	margin-left:22px;
+	top:30px;
+	width:220px;
+	height:220px;
+	border:1px solid #000;
+	
+}
+#threeinfo{
+	position:absolute;
+	left:13px;
+	 top:1560px; 
+	width:925px;
+	min-height:200px;
+	border:1px solid #000;
+	z-index:14;
+}
+#fourinfo{
+	position:absolute;
+	left:13px;
+	 top:1770px; 
+	width:925px;
+	min-height:200px;
+	border:1px solid #000;
+	z-index:15;
+}
+#fiveinfo{
+	position:absolute;
+	left:13px;
+	 top:1980px; 
+	width:649px;
+	min-height:200px;
+	border:1px solid #000;
+	z-index:15;
+}

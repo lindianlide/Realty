@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-20 10:18:15 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Land" table="land" schema="dbo" catalog="realty" >
+        <id name="landId" type="int">
+            <column name="land_id" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="landPoss" class="com.realty.base.model.LandPoss" lazy="false" fetch="select">
+            <column name="landposs_id" />
+        </many-to-one>
+        <many-to-one name="landSellway" class="com.realty.base.model.LandSellway" lazy="false" fetch="select">
+            <column name="sellway_id" />
+        </many-to-one>
+        <many-to-one name="landUsage" class="com.realty.base.model.LandUsage" lazy="false" fetch="select">
+            <column name="usage_id" />
+        </many-to-one>
+        <property name="landName" type="string">
+            <column name="land_name" />
+        </property>
+        <property name="auctionTime" type="date">
+            <column name="auction_time" length="10" />
+        </property>
+        <property name="regionId" type="java.lang.Integer">
+            <column name="region_id" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" />
+        </property>
+        <property name="landLevel" type="string">
+            <column name="land_level" />
+        </property>
+        <property name="landExploit" type="string">
+            <column name="land_exploit" />
+        </property>
+        <property name="heightLimit" type="string">
+            <column name="height_limit" />
+        </property>
+        <property name="landArea" type="java.lang.Double">
+            <column name="land_area" precision="53" scale="0" />
+        </property>
+        <property name="plotRatio" type="string">
+            <column name="plot_ratio" />
+        </property>
+        <property name="buildingDensity" type="string">
+            <column name="building_density" />
+        </property>
+        <property name="greeningRatio" type="string">
+            <column name="greening_ratio" />
+        </property>
+        <property name="sellYear" type="java.lang.Integer">
+            <column name="sell_year" />
+        </property>
+        <property name="planArea" type="java.lang.Double">
+            <column name="plan_area" precision="53" scale="0" />
+        </property>
+        <property name="initialPrice" type="java.lang.Integer">
+            <column name="initial_price" />
+        </property>
+        <property name="builddealPrice" type="java.lang.Integer">
+            <column name="builddeal_price" />
+        </property>
+        <property name="landdealPrice" type="java.lang.Double">
+            <column name="landdeal_price" precision="53" scale="0" />
+        </property>
+        <property name="dealTotle" type="java.lang.Double">
+            <column name="deal_totle" precision="53" scale="0" />
+        </property>
+        <property name="premiumRate" type="string">
+            <column name="premium_rate" />
+        </property>
+        <property name="buyer" type="string">
+            <column name="buyer" />
+        </property>
+        <property name="dealDate" type="date">
+            <column name="deal_date" length="10" />
+        </property>
+        <property name="sellAnnounce" type="string">
+            <column name="sell_announce" />
+        </property>
+        <property name="dealAnnounce" type="string">
+            <column name="deal_announce" />
+        </property>
+        <property name="landmap" type="string">
+            <column name="landmap" length="500" />
+        </property>
+        <property name="landIntr" type="string">
+            <column name="land_intr" />
+        </property>
+        <property name="projectIntro" type="string">
+            <column name="project_intro" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="longitude" precision="53" scale="0" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="latitude" precision="53" scale="0" />
+        </property>
+        <property name="entryId" type="java.lang.Integer">
+            <column name="entry_id" />
+        </property>
+        <property name="entryName" type="string">
+            <column name="entry_name" />
+        </property>
+        <property name="enrtyTime" type="timestamp">
+            <column name="enrty_time" length="16" />
+        </property>
+        <property name="auditName" type="string">
+            <column name="audit_name" />
+        </property>
+        <property name="auditTime" type="timestamp">
+            <column name="audit_time" length="16" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="status" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" />
+        </property>
+        <property name="landOwnid" type="java.lang.Integer">
+            <column name="land_ownid" />
+        </property>
+        <property name="allotFlag" type="java.lang.Integer">
+            <column name="allot_flag" />
+        </property>
+        <property name="announceTime" type="date">
+            <column name="announce_time" length="10" />
+        </property>
+        <property name="zpgTime" type="date">
+            <column name="zpg_time" length="10" />
+        </property>
+        <property name="auctionEndtime" type="date">
+            <column name="auction_endtime" length="10" />
+        </property>
+        <property name="landNumber" type="string">
+            <column name="land_number" />
+        </property>
+        <property name="landAllarea" type="java.lang.Double">
+            <column name="land_allarea" precision="53" scale="0" />
+        </property>
+        <property name="planAllarea" type="java.lang.Double">
+            <column name="plan_allarea" precision="53" scale="0" />
+        </property>
+        <property name="getway" type="string">
+            <column name="getway" />
+        </property>
+        <property name="sellAnnonumber" type="string">
+            <column name="sell_annonumber" />
+        </property>
+        <property name="dealAnnonumber" type="string">
+            <column name="deal_annonumber" />
+        </property>
+        <set name="landPhotos" table="land_photo" inverse="true"  fetch="select">
+            <key>
+                <column name="land_id" not-null="true" />
+            </key>
+            <one-to-many class="com.realty.base.model.LandPhoto" />
+        </set>
+        <set name="landLocations" table="land_location" inverse="true"  fetch="select">
+            <key>
+                <column name="land_id" not-null="true" />
+            </key>
+            <one-to-many class="com.realty.base.model.LandLocation" />
+        </set>
+        <set name="landAllots" table="land_allot" inverse="true"  fetch="select">
+            <key>
+                <column name="land_id" />
+            </key>
+            <one-to-many class="com.realty.base.model.LandAllot" />
+        </set>
+        <set name="landMutiusages" table="land_mutiusage" inverse="true"  fetch="select">
+            <key>
+                <column name="land_id" not-null="true" />
+            </key>
+            <one-to-many class="com.realty.base.model.LandMutiusage" />
+        </set>
+    </class>
+</hibernate-mapping>

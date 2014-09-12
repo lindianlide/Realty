@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-13 11:32:41 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.BuildingDecorate" table="building_decorate" schema="dbo" catalog="realty">
+        <id name="decorateId" type="int">
+            <column name="decorate_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="decorateName" type="string">
+            <column name="decorate_name" />
+        </property>
+    </class>
+</hibernate-mapping>

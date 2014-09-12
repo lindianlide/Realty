@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-5 15:28:23 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Project" table="project" schema="dbo" catalog="realty">
+        <id name="projectId" type="int">
+            <column name="project_id" />
+            <generator class="native" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" not-null="true" />
+        </property>
+        <property name="procategoryId" update="false" type="java.lang.Integer">
+            <column name="procategory_id" />
+        </property>
+        <property name="date" update="false" type="timestamp">
+            <column name="date" length="16" />
+        </property>
+        <property name="browses" type="java.lang.Integer">
+            <column name="browses" />
+        </property>
+        <property name="contents" type="string">
+            <column name="contents" />
+        </property>
+        <property name="proFile" update="false" type="string">
+            <column name="pro_file" />
+        </property>
+    </class>
+</hibernate-mapping>

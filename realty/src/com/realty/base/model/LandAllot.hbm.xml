@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-24 15:56:48 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.LandAllot" table="land_allot" schema="dbo" catalog="realty">
+        <id name="landallotId" type="int">
+            <column name="landallot_id" />
+            <generator class="native" />
+        </id>
+        <property name="landId" type="java.lang.Integer">
+            <column name="land_id" />
+        </property>
+        <property name="landusageId" type="java.lang.Integer">
+            <column name="landusage_id" />
+        </property>
+        <property name="landusageDetail" type="string">
+            <column name="landusage_detail" />
+        </property>
+        <property name="landArea" type="java.lang.Double">
+            <column name="land_area" precision="53" scale="0" />
+        </property>
+        <property name="planArea" type="java.lang.Double">
+            <column name="plan_area" precision="53" scale="0" />
+        </property>
+        <property name="housenum" type="java.lang.Integer">
+            <column name="housenum" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" />
+        </property>
+    </class>
+</hibernate-mapping>

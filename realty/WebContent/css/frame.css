@@ -1,0 +1,29 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.STYLE1 {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.STYLE2 {font-size: 9px}
+.STYLE3 {
+	color: #033d61;
+	font-size: 12px;
+}
+a{ color:#000000; /*无链接时颜色*/ }  
+a:link {    /* 未被访问的链接   */
+ text-decoration: none;
+}
+a:visited {    /* 未被访问的链接   */
+ text-decoration: none;
+}
+a:hover {   /* 鼠标悬浮在上的链接 */
+ color:#0000FF;
+ text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	}   /* 鼠标点中激活链接   蓝色 */

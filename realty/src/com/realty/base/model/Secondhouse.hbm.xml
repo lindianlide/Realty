@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-26 19:27:00 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Secondhouse" table="secondhouse" schema="dbo" catalog="realty">
+        <id name="houseId" type="int">
+            <column name="house_id" />
+            <generator class="native" />
+        </id>
+        <property name="houseName" type="string">
+            <column name="house_name" />
+        </property>
+        <property name="regionId" type="java.lang.Integer">
+            <column name="region_id" />
+        </property>
+        <property name="propertyAdress" type="string">
+            <column name="property_adress" />
+        </property>
+        <property name="propertyName" type="string">
+            <column name="property_name" />
+        </property>
+        <property name="usageId" type="java.lang.Integer">
+            <column name="usage_id" />
+        </property>
+        <property name="exchangeTime" type="date">
+            <column name="exchange_time" length="10" />
+        </property>
+        <property name="buildingArea" type="java.lang.Double">
+            <column name="building_area" precision="53" scale="0" />
+        </property>
+        <property name="structureId" type="java.lang.Integer">
+            <column name="structure_id" />
+        </property>
+        <property name="present" type="string">
+            <column name="present" />
+        </property>
+        <property name="exchangePrice" type="java.lang.Double">
+            <column name="exchange_price" precision="53" scale="0" />
+        </property>
+        <property name="exchangeTotle" type="java.lang.Double">
+            <column name="exchange_totle" precision="53" scale="0" />
+        </property>
+        <property name="pricetypeId" type="java.lang.Integer">
+            <column name="pricetype_id" />
+        </property>
+        <property name="taxtypeId" type="java.lang.Integer">
+            <column name="taxtype_id" />
+        </property>
+        <property name="taxTotle" type="java.lang.Double">
+            <column name="tax_totle" precision="53" scale="0" />
+        </property>
+        <property name="taxSeller" type="java.lang.Double">
+            <column name="tax_seller" precision="53" scale="0" />
+        </property>
+        <property name="taxBuyer" type="java.lang.Double">
+            <column name="tax_buyer" precision="53" scale="0" />
+        </property>
+        <property name="decorateId" type="java.lang.Integer">
+            <column name="decorate_id" />
+        </property>
+        <property name="buildingTime" type="string">
+            <column name="building_time" />
+        </property>
+        <property name="floorTotle" type="string">
+            <column name="floor_totle" />
+        </property>
+        <property name="floorSaid" type="java.lang.Integer">
+            <column name="floor_said" />
+        </property>
+        <property name="floorActual" type="java.lang.Integer">
+            <column name="floor_actual" />
+        </property>
+        <property name="roomRate" type="string">
+            <column name="room_rate" />
+        </property>
+        <property name="houseType" type="string">
+            <column name="house_type" />
+        </property>
+        <property name="orientation" type="string">
+            <column name="orientation" />
+        </property>
+        <property name="otherfile" type="string">
+            <column name="otherfile" />
+        </property>
+        <property name="introduction" type="string">
+            <column name="introduction" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="longitude" precision="53" scale="0" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="latitude" precision="53" scale="0" />
+        </property>
+        <property name="saleTime" type="string">
+            <column name="sale_time" />
+        </property>
+        <property name="entryId" type="java.lang.Integer">
+            <column name="entry_id" />
+        </property>
+        <property name="entryName" type="string">
+            <column name="entry_name" />
+        </property>
+        <property name="entryTime" type="timestamp">
+            <column name="entry_time" length="16" />
+        </property>
+        <property name="auditName" type="string">
+            <column name="audit_name" />
+        </property>
+        <property name="auditTime" type="timestamp">
+            <column name="audit_time" length="16" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="status" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" />
+        </property>
+        <set name="sedecoratePhotos" table="sedecorate_photo" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="house_id" />
+            </key>
+            <one-to-many class="com.realty.base.model.SedecoratePhoto" />
+        </set>
+        <set name="setypePhotos" table="setype_photo" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="house_id" />
+            </key>
+            <one-to-many class="com.realty.base.model.SetypePhoto" />
+        </set>
+    </class>
+</hibernate-mapping>

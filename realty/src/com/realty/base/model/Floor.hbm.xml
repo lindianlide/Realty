@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-28 22:26:33 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.realty.base.model.Floor" table="floor" schema="dbo" catalog="realty">
+        <id name="floorId" type="int">
+            <column name="floor_id" />
+            <generator class="native" />
+        </id>
+        <property name="buildingId" type="int">
+            <column name="building_id" not-null="true" />
+        </property>
+        <property name="buildNum" type="java.lang.Integer">
+            <column name="build_num" />
+        </property>
+        <property name="unitNum" type="java.lang.Integer">
+            <column name="unit_num" />
+        </property>
+        <property name="houseNum" type="java.lang.Integer">
+            <column name="house_num" />
+        </property>
+        <property name="houseArea" type="java.lang.Double">
+            <column name="house_area" precision="53" scale="0" />
+        </property>
+        <property name="present" type="string">
+            <column name="present" />
+        </property>
+        <property name="decorateId" type="java.lang.Integer">
+            <column name="decorate_id" />
+        </property>
+        <property name="floorTotle" type="java.lang.Integer">
+            <column name="floor_totle" />
+        </property>
+        <property name="floorSaid" type="java.lang.Integer">
+            <column name="floor_said" />
+        </property>
+        <property name="floorActual" type="java.lang.Integer">
+            <column name="floor_actual" />
+        </property>
+        <property name="usageId" type="java.lang.Integer">
+            <column name="usage_id" />
+        </property>
+        <property name="houseType" type="string">
+            <column name="house_type" />
+        </property>
+        <property name="orientation" type="string">
+            <column name="orientation" />
+        </property>
+        <property name="exchangePrice" type="java.lang.Double">
+            <column name="exchange_price" precision="53" scale="0" />
+        </property>
+        <property name="exchangeTotle" type="java.lang.Double">
+            <column name="exchange_totle" precision="53" scale="0" />
+        </property>
+        <property name="exchangeTime" type="date">
+            <column name="exchange_time" length="10" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" />
+        </property>
+    </class>
+</hibernate-mapping>
